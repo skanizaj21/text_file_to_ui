@@ -20,7 +20,8 @@ namespace Prvi_Projektni_Zadatak.Models
             get { return Surname; }
             set { Surname = value; }
         }
-        public string YearOfBirth {
+        public string YearOfBirth
+        {
             get { return YearOfBirth; }
             set { YearOfBirth = value; }
         }
@@ -49,20 +50,21 @@ namespace Prvi_Projektni_Zadatak.Models
         char[] seperator = { '=' };
         String[] strarr = null;
 
-        public String text{ get; set; }
+        public String text { get; set; }
 
-        public void UcitajPodatke() {
+        public void UcitajPodatke()
+        {
             UserFileReader UserFileReader = new UserFileReader();
             this.text = UserFileReader.text;
             str = this.text;
             strarr = str.Split(seperator);
             this.Name = strarr[0];
             this.Surname = strarr[1];
-            this.YearOfBirth = strarr[2];   
-            this.City = strarr[3];  
+            this.YearOfBirth = strarr[2];
+            this.City = strarr[3];
             this.Faculty = strarr[4];
             this.Role = strarr[5];
-            this.Atribute= strarr[6];
+            this.Atribute = strarr[6];
         }
 
     }
