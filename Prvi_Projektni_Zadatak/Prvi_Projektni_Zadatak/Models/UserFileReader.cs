@@ -17,7 +17,16 @@ namespace Prvi_Projektni_Zadatak.Models
     public class UserFileReader
     {
 
-   
+        public String text
+        {
+            get { return text; }
+            set { text = value; }
+        }
+        public void FileOpen(String text)
+        {
+            this.text = text;
+        }
+
 
     }
 }
