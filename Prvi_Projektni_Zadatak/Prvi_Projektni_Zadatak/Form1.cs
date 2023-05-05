@@ -45,7 +45,15 @@ namespace Prvi_Projektni_Zadatak
                 }
                 sr.Close();
                 UserFileReader.FileOpen(sb.ToString());
-                
+                UserParser.filePath = dlg.FileName.ToString();
+                UserParser.parse(UserFileReader.text);
+                User.setData(UserParser);
+                txtName.Text = User.name;
+                txtDate.Text = User.dateOfBirth;
+                txtCity.Text = User.city;
+                txtFaculty.Text = User.faculty;
+                txtRole.Text = User.role;
+                txtAtribute.Text = User.atribute;
 
             }
         }
