@@ -18,8 +18,17 @@ namespace Prvi_Projektni_Zadatak.Models
         public string role { get; set; }
         public string atribute { get; set; }
 
-       
-      
+        public void setData(UserParser up)
+        {
+            name = up.nameP;
+            surname = up.surnameP;
+            dateOfBirth = up.dateOfBirthP;
+            city = up.cityP;
+            faculty = up.facultyP;
+            role = up.roleP;
+            atribute = up.atributeP;
+        }
+
     }
 
     
