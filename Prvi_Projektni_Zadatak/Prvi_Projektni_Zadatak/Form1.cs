@@ -14,11 +14,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Prvi_Projektni_Zadatak
 {
-    public partial class Form1 : Form
+    public partial class UserInfoForm : Form
     {
 
         UserFileReader UserFileReader = new UserFileReader();
-        public Form1()
+        User User = new User();
+        UserParser UserParser = new UserParser();
+        public UserInfoForm()
         {
             InitializeComponent();
         }
@@ -43,7 +45,10 @@ namespace Prvi_Projektni_Zadatak
                 }
                 sr.Close();
                 UserFileReader.FileOpen(sb.ToString());
+                
+
             }
         }
+
     }
 }
