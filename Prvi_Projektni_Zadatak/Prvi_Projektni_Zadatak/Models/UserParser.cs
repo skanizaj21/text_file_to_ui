@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Prvi_Projektni_Zadatak.Models
 {
-    internal class UserParser
+    public class UserParser
     {
         public String str { get; set; }
         public string nameP { get; set; }
@@ -63,4 +63,4 @@ namespace Prvi_Projektni_Zadatak.Models
         }
     }
 }
-}
+

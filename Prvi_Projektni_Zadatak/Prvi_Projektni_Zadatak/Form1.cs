@@ -18,6 +18,7 @@ namespace Prvi_Projektni_Zadatak
     {
 
         UserFileReader UserFileReader = new UserFileReader();
+        Reader Reader = new Reader();   
         User User = new User();
         UserParser UserParser = new UserParser();
         public UserInfoForm()
@@ -27,25 +28,9 @@ namespace Prvi_Projektni_Zadatak
 
         private void txtChoseFile_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Title = "Open text file";
-            dlg.InitialDirectory = @"c:\";
-            dlg.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-                StreamReader sr = File.OpenText(dlg.FileName);
-
-                string s = sr.ReadLine();
-                StringBuilder sb = new StringBuilder();
-                while (s != null)
-                {
-                    sb.Append(s);
-                    s = sr.ReadLine();
-                }
-                sr.Close();
-                UserFileReader.FileOpen(sb.ToString());
-                UserParser.filePath = dlg.FileName.ToString();
+                Reader.Read();
+                UserFileReader.FileOpen(Reader.content);
+                UserParser.filePath = Reader.path;
                 UserParser.parse(UserFileReader.text);
                 User.setData(UserParser);
                 txtName.Text = User.name;
@@ -59,4 +44,3 @@ namespace Prvi_Projektni_Zadatak
         }
 
     }
-}
