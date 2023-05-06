@@ -21,7 +21,7 @@ namespace Prvi_Projektni_Zadatak.Models
         public string filePath { get; set; }
 
 
-        public void parse(string input)
+        public void Parse(string input)
         {
             str = input;
 

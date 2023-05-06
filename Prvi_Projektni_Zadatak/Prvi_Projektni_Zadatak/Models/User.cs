@@ -19,7 +19,7 @@ namespace Prvi_Projektni_Zadatak.Models
         public string atribute { get; set; }
         public int count { get; set; }
 
-        public void setData(UserParser up)
+        public void SetData(UserParser up)
         {
             name = up.nameP;
             surname = up.surnameP;

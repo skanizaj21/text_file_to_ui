@@ -29,7 +29,7 @@ namespace Prvi_Projektni_Zadatak
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtChoseFile = new System.Windows.Forms.Button();
+            this.btnChoseFile = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblCity = new System.Windows.Forms.Label();
@@ -44,131 +44,125 @@ namespace Prvi_Projektni_Zadatak
             this.txtAtribute = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txtChoseFile
+            // btnChoseFile
             // 
-            this.txtChoseFile.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtChoseFile.Location = new System.Drawing.Point(44, 20);
-            this.txtChoseFile.Margin = new System.Windows.Forms.Padding(2);
-            this.txtChoseFile.Name = "txtChoseFile";
-            this.txtChoseFile.Size = new System.Drawing.Size(80, 24);
-            this.txtChoseFile.TabIndex = 0;
-            this.txtChoseFile.Text = "Chose file...";
-            this.txtChoseFile.UseVisualStyleBackColor = true;
-            this.txtChoseFile.Click += new System.EventHandler(this.txtChoseFile_Click);
+            this.btnChoseFile.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnChoseFile.Location = new System.Drawing.Point(59, 25);
+            this.btnChoseFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChoseFile.Name = "btnChoseFile";
+            this.btnChoseFile.Size = new System.Drawing.Size(107, 30);
+            this.btnChoseFile.TabIndex = 0;
+            this.btnChoseFile.Text = "Chose file...";
+            this.btnChoseFile.UseVisualStyleBackColor = true;
+            this.btnChoseFile.Click += new System.EventHandler(this.txtChoseFile_Click);
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(9, 81);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Location = new System.Drawing.Point(12, 100);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(57, 13);
+            this.lblName.Size = new System.Drawing.Size(71, 16);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Full Name:";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(9, 132);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Location = new System.Drawing.Point(12, 162);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(67, 13);
+            this.lblDate.Size = new System.Drawing.Size(81, 16);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "Year of birth:";
             // 
             // lblCity
             // 
             this.lblCity.AutoSize = true;
-            this.lblCity.Location = new System.Drawing.Point(9, 185);
-            this.lblCity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCity.Location = new System.Drawing.Point(12, 228);
             this.lblCity.Name = "lblCity";
-            this.lblCity.Size = new System.Drawing.Size(27, 13);
+            this.lblCity.Size = new System.Drawing.Size(32, 16);
             this.lblCity.TabIndex = 3;
             this.lblCity.Text = "City:";
             // 
             // lblFaculty
             // 
             this.lblFaculty.AutoSize = true;
-            this.lblFaculty.Location = new System.Drawing.Point(9, 239);
-            this.lblFaculty.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFaculty.Location = new System.Drawing.Point(12, 294);
             this.lblFaculty.Name = "lblFaculty";
-            this.lblFaculty.Size = new System.Drawing.Size(44, 13);
+            this.lblFaculty.Size = new System.Drawing.Size(53, 16);
             this.lblFaculty.TabIndex = 4;
             this.lblFaculty.Text = "Faculty:";
             // 
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(9, 295);
-            this.lblRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRole.Location = new System.Drawing.Point(12, 363);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(32, 13);
+            this.lblRole.Size = new System.Drawing.Size(39, 16);
             this.lblRole.TabIndex = 5;
             this.lblRole.Text = "Role:";
             // 
             // lblAtribute
             // 
             this.lblAtribute.AutoSize = true;
-            this.lblAtribute.Location = new System.Drawing.Point(9, 347);
-            this.lblAtribute.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAtribute.Location = new System.Drawing.Point(12, 427);
             this.lblAtribute.Name = "lblAtribute";
-            this.lblAtribute.Size = new System.Drawing.Size(110, 13);
+            this.lblAtribute.Size = new System.Drawing.Size(137, 16);
             this.lblAtribute.TabIndex = 6;
             this.lblAtribute.Text = "[role specific attribute]";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(140, 81);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtName.Location = new System.Drawing.Point(187, 100);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(158, 20);
+            this.txtName.Size = new System.Drawing.Size(209, 22);
             this.txtName.TabIndex = 7;
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(140, 132);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDate.Location = new System.Drawing.Point(187, 162);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(158, 20);
+            this.txtDate.Size = new System.Drawing.Size(209, 22);
             this.txtDate.TabIndex = 8;
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(140, 183);
-            this.txtCity.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCity.Location = new System.Drawing.Point(187, 225);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(158, 20);
+            this.txtCity.Size = new System.Drawing.Size(209, 22);
             this.txtCity.TabIndex = 9;
             // 
             // txtFaculty
             // 
-            this.txtFaculty.Location = new System.Drawing.Point(140, 236);
-            this.txtFaculty.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFaculty.Location = new System.Drawing.Point(187, 290);
+            this.txtFaculty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFaculty.Name = "txtFaculty";
-            this.txtFaculty.Size = new System.Drawing.Size(158, 20);
+            this.txtFaculty.Size = new System.Drawing.Size(209, 22);
             this.txtFaculty.TabIndex = 10;
             // 
             // txtRole
             // 
-            this.txtRole.Location = new System.Drawing.Point(140, 290);
-            this.txtRole.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRole.Location = new System.Drawing.Point(187, 357);
+            this.txtRole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRole.Name = "txtRole";
-            this.txtRole.Size = new System.Drawing.Size(158, 20);
+            this.txtRole.Size = new System.Drawing.Size(209, 22);
             this.txtRole.TabIndex = 11;
             // 
             // txtAtribute
             // 
-            this.txtAtribute.Location = new System.Drawing.Point(140, 347);
-            this.txtAtribute.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAtribute.Location = new System.Drawing.Point(187, 427);
+            this.txtAtribute.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAtribute.Name = "txtAtribute";
-            this.txtAtribute.Size = new System.Drawing.Size(158, 20);
+            this.txtAtribute.Size = new System.Drawing.Size(209, 22);
             this.txtAtribute.TabIndex = 12;
             // 
             // UserInfoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 441);
+            this.ClientSize = new System.Drawing.Size(491, 543);
             this.Controls.Add(this.txtAtribute);
             this.Controls.Add(this.txtRole);
             this.Controls.Add(this.txtFaculty);
@@ -181,8 +175,8 @@ namespace Prvi_Projektni_Zadatak
             this.Controls.Add(this.lblCity);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.txtChoseFile);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Controls.Add(this.btnChoseFile);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserInfoForm";
             this.Text = "User data display";
             this.ResumeLayout(false);
@@ -192,7 +186,7 @@ namespace Prvi_Projektni_Zadatak
 
         #endregion
 
-        private System.Windows.Forms.Button txtChoseFile;
+        private System.Windows.Forms.Button btnChoseFile;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblCity;

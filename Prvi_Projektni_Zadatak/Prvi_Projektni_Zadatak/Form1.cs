@@ -31,8 +31,8 @@ namespace Prvi_Projektni_Zadatak
                 Reader.Read();
                 UserFileReader.FileOpen(Reader.content);
                 UserParser.filePath = Reader.path;
-                UserParser.parse(UserFileReader.text);
-                User.setData(UserParser);
+                UserParser.Parse(UserFileReader.text);
+                User.SetData(UserParser);
                 txtName.Text = User.name;
                 txtDate.Text = User.dateOfBirth;
                 txtCity.Text = User.city;
