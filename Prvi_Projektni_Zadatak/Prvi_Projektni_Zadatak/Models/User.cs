@@ -17,6 +17,7 @@ namespace Prvi_Projektni_Zadatak.Models
         public string faculty { get; set; }
         public string role { get; set; }
         public string atribute { get; set; }
+        public int count { get; set; }
 
         public void setData(UserParser up)
         {
@@ -27,6 +28,7 @@ namespace Prvi_Projektni_Zadatak.Models
             faculty = up.facultyP;
             role = up.roleP;
             atribute = up.atributeP;
+            count = up.countP;
         }
 
     }

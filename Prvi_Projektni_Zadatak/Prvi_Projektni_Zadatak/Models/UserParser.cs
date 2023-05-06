@@ -9,7 +9,7 @@ namespace Prvi_Projektni_Zadatak.Models
 {
     public class UserParser
     {
-        public String str { get; set; }
+        public string str { get; set; }
         public string nameP { get; set; }
         public string surnameP { get; set; }
         public string dateOfBirthP { get; set; }
@@ -17,10 +17,11 @@ namespace Prvi_Projektni_Zadatak.Models
         public string facultyP { get; set; }
         public string roleP { get; set; }
         public string atributeP { get; set; }
+        public int countP { get; set; }
         public string filePath { get; set; }
 
 
-        public void parse(String input)
+        public void parse(string input)
         {
             str = input;
 
@@ -57,9 +58,16 @@ namespace Prvi_Projektni_Zadatak.Models
                         case "Najdraži kolegij":
                             atributeP = value;
                             break;
+                        case "Datoteci pristupljeno puta":
+                            countP = int.Parse(value) + 1;
+                            StreamWriter outputFile = new StreamWriter(Path.Combine(filePath));
+                            outputFile.WriteLine("Datoteci pristupljeno puta=" + countP.ToString());
+                            break;
                     }
                 }
             }
+
+
         }
     }
 }
