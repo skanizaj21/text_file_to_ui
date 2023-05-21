@@ -61,7 +61,6 @@ namespace Prvi_Projektni_Zadatak.Models
                         case "Datoteci pristupljeno puta":
                             countP = int.Parse(value) + 1;
                             StreamWriter outputFile = new StreamWriter(Path.Combine(filePath));
-                            outputFile.WriteLine("Datoteci pristupljeno puta=" + countP.ToString());
                             break;
                     }
                 }
